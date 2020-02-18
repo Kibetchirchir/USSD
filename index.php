@@ -50,7 +50,7 @@ again -->
         </input>
         <submit name="trackItems">
             <method>POST</method>
-            <url>https://ticketsoko.com/ussd.php</url>
+            <url>.$_ENV['baseURL']'ussd.php'</url>
             <variable>trackingNumber</variable>
             <ref>#trackItemsConfirm</ref>
         </submit>
@@ -134,7 +134,7 @@ remember-history value="true" -->
         </input>
         <submit name="DSTV2">
             <method>POST</method>
-            <url>https://ticketsoko.com/ussd.php</url>
+            <url>.$_ENV['baseURL']'ussd.php'</url>
             <variable>DSTV</variable>
             <ref>#DefaultExit</ref>
         </submit>
@@ -160,7 +160,7 @@ remember-history value="true" -->
         </input>
         <submit name="Boxes2">
             <method>POST</method>
-            <url>https://ticketsoko.com/ussd.php</url>
+            <url>.$_ENV['baseURL']'ussd.php'</url>
             <variable>DSTV</variable>
             <ref>#Boxesconfirm</ref>
         </submit>
@@ -188,7 +188,7 @@ remember-history value="true" -->
 
         <submit name="renewSubscription2">
             <method>POST</method>
-            <url>https://ticketsoko.com/ussd.php</url>
+            <url>.$_ENV['baseURL']'ussd.php'</url>
             <variable>box</variable>
             <ref>#DefaultExit</ref>
         </submit>
@@ -217,7 +217,7 @@ remember-history value="true" -->
 
         <submit name="checkStatus2">
             <method>POST</method>
-            <url>https://ticketsoko.com/</url>
+            <url>.$_ENV['baseURL']</url>
             <variable>box</variable>
             <ref>#checkStatusconfirmed</ref>
         </submit>
